@@ -17,6 +17,6 @@ I'm not sure what's best for this project but I intend to start with Three.js an
 
 
 ## Note for professor:
-- Please let me know what you think! I'm fully open to any suggestions or changes for this project as you see fit!
+- Please let me know what you think so far! I'm fully open to any suggestions or changes for this project as you see fit! I'll also gladly consider any other applications, API's or tools to develop this!
 
 
