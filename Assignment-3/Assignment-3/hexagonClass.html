@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script src="Common/initShaders.js"></script>
+    <script src="Common/Helpers.js"></script>
+    <script src="BasicCube.js"></script>
+
+    <script>
+        function init() {
+            let canvas = document.getElementById("webgl-canvas");
+            let gl = canvas.getContext("webgl2");
+
+            gl.clearColor(0.2, 0.2, 0.2, 1.0);
+
+            let hex = new BasicCube(gl);
+
+            let render = () => {
+                gl.clear(gl.COLOR_BUFFER_BIT);
+
+                hex.draw();
+
+                requestAnimationFrame(render);
+            };
+
+            render();
+        }
+
+        window.onload = init;
+    </script>
+
+    <canvas id="webgl-canvas" width="512" height="512"></canvas>
+</html>
